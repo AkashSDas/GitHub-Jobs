@@ -1,0 +1,188 @@
+main {
+  background: var(--bg-secondary);
+  margin: auto 1.25rem;
+  height: 100%;
+  min-height: 150vh;
+  padding: 2rem 1.75rem;
+  border-radius: 2rem;
+}
+
+.job-form {
+  // display: flex;
+  // flex-direction: row;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  margin-bottom: 2rem;
+
+  .site-info {
+    margin: auto 1.5rem;
+
+    h1 {
+      font-family: var(--open-sans);
+      font-weight: 900;
+      font-size: 4rem;
+    }
+
+    h3 {
+      font-family: var(--roboto);
+      font-weight: bold;
+      font-size: 1.75rem;
+      margin: 1.75rem auto;
+    }
+
+    div {
+      font-family: var(--montserrat);
+      font-size: 1.125rem;
+      font-weight: 500;
+    }
+
+    div > p {
+      margin: 1.25rem auto;
+    }
+  }
+
+  .form {
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-family: var(--lato);
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      padding: 0 1.125rem;
+    }
+
+    input {
+      font-family: var(--lato);
+      font-size: 1.25rem;
+      margin-bottom: 1.75rem;
+      border: none;
+      border-bottom: 2.5px dashed var(--btn1);
+      // border-radius: 1rem;
+      color: var(--bg-primary);
+      background: var(--input-bg);
+      padding: 1.125rem 1rem;
+      outline: none;
+    }
+
+    label.checkbox-label {
+      text-align: center;
+
+      input {
+        width: 1rem;
+        height: 1rem;
+      }
+
+      span {
+        margin-left: 1rem;
+      }
+    }
+
+    button {
+      // background: var(--btn1);
+      background: linear-gradient(to right, #3eadcf, #abe9cd);
+      border: none;
+      border-radius: 2rem;
+      color: white;
+      font-size: 1.5rem;
+      font-family: var(--open-sans);
+      font-weight: 700;
+      padding: 0.75rem 0.5rem;
+      box-shadow: 4px 4px 1px 1px;
+      transition: all 500ms;
+      outline: none;
+    }
+
+    button:hover {
+      transform: translateY(-3px);
+    }
+  }
+}
+
+.scroll-to-top-btn {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  bottom: 50px;
+  right: 50px;
+  background-color: var(--btn1);
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  outline: none;
+
+  font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+  .job-form {
+    .form {
+      margin-top: 2rem;
+
+      input {
+        margin-bottom: 2.25rem;
+      }
+    }
+  }
+
+  .scroll-to-top-btn {
+    bottom: 30px;
+    right: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    margin: auto 0.5rem;
+    padding: 1rem 0.25rem;
+  }
+
+  .job-form {
+    .site-info {
+      h1 {
+        font-size: 3rem;
+      }
+
+      h3 {
+        margin: 1rem auto;
+      }
+    }
+
+    .form {
+      margin: 1rem;
+
+      input {
+        font-size: 1rem;
+      }
+
+      label.checkbox-label {
+        input {
+          width: initial;
+          height: initial;
+        }
+      }
+    }
+  }
+
+  .scroll-to-top-btn {
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .job-form {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
+    .site-info {
+      margin: auto 0.75rem;
+    }
+
+    .form {
+      margin: 1rem 0.75rem;
+    }
+  }
+}

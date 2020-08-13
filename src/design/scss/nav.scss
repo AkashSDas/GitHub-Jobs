@@ -1,0 +1,18 @@
+header {
+  text-align: center;
+  margin: 1.75rem auto;
+  h2 {
+    color: white;
+    font-size: 2rem;
+    font-family: var(--open-sans);
+    font-weight: bolder;
+    font-style: italic;
+
+    transition: all 300ms ease-in-out;
+  }
+
+  h2:hover {
+    color: var(--btn1);
+    transform: rotate(-3deg) scale(1.25);
+  }
+}

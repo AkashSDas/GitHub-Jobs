@@ -1,0 +1,175 @@
+.description {
+  background: var(--bg-secondary);
+  margin: auto 1.25rem;
+  height: 100%;
+  min-height: 150vh;
+  padding: 2rem 1.75rem;
+  border-radius: 2rem;
+
+  .go-back {
+    margin-bottom: 2rem;
+
+    a {
+      text-decoration: none;
+      color: var(--link);
+      font-family: var(--open-sans);
+      font-size: 1.25rem;
+    }
+  }
+
+  .job-info {
+    color: var(--text1);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-family: var(--open-sans);
+  }
+
+  .heading {
+    font-size: 2rem;
+    font-family: var(--open-sans);
+    font-weight: 900;
+  }
+
+  .img-container {
+    text-align: center;
+    margin: 3rem auto;
+    background: var(--text3);
+    width: 80%;
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: all 500ms;
+
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+    hr {
+      width: 90%;
+      border: 1px solid var(--bg-primary);
+    }
+
+    .img {
+      margin: auto 0;
+      height: 23rem;
+      width: 70%;
+    }
+
+    .company-name {
+      font-size: 1.25rem;
+      font-family: var(--open-sans);
+    }
+
+    .company-url {
+      font-size: 1.125rem;
+      font-family: var(--lato);
+      color: var(--link);
+    }
+  }
+
+  .img-container:hover {
+    transform: translateY(-3px);
+  }
+
+  .how-to-apply {
+    text-align: center;
+    margin: 4rem auto;
+    border-radius: 2rem;
+    padding: 2rem;
+    width: 80%;
+    background: var(--text3);
+    transition: all 500ms;
+
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 900;
+      font-family: var(--open-sans);
+      margin-bottom: 2rem;
+    }
+
+    .link {
+      font-family: var(--lato);
+      font-size: 1.125rem;
+
+      a {
+        color: var(--link);
+      }
+    }
+  }
+
+  .how-to-apply:hover {
+    transform: translateY(-3px);
+  }
+
+  .content {
+    p {
+      font-family: var(--lato);
+      font-weight: 400;
+      font-size: 1.125rem;
+      margin: 1rem auto;
+    }
+
+    ul {
+      list-style: circle;
+      margin-left: 3rem;
+      font-family: var(--lato);
+      font-weight: 400;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .description {
+    .img-container {
+      width: 100%;
+
+      hr {
+        width: 95%;
+      }
+
+      .img {
+        width: 95%;
+      }
+    }
+
+    .how-to-apply {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .description {
+    margin: auto 0.5rem;
+    padding: 1rem;
+
+    .img-container {
+      padding: 2rem 0.75rem 2rem 0.75rem;
+
+      .img {
+        width: 100%;
+        height: 13rem;
+      }
+
+      .company-url {
+        font-size: 0.75rem;
+      }
+    }
+
+    .content {
+      ul {
+        margin-left: 2rem;
+      }
+    }
+
+    .how-to-apply {
+      padding: 2rem 0.75rem;
+
+      .link a {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
