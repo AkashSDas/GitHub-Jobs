@@ -15,3 +15,13 @@
 - ✅  React is used for frontend and Sass is used for styling
 - ✅  For frontend UI design Figma is used
 - ✅  GitHub's public api is used for data
+
+## 🎥 Images
+
+![](./docs/images/img1.png)
+![](./docs/images/img2.png)
+![](./docs/images/img3.png)
+![](./docs/images/img4.png)
+![](./docs/images/img5.png)
+![](./docs/images/img6.png)
+![](./docs/images/img7.png)
